@@ -1,6 +1,6 @@
 document.querySelector('header').innerHTML = `
     <div class="topnav">
-        <div class="sitetitle"><a href="#title">My Website</a></div>
+        <div class="sitetitle"><a href="index.html">My Website</a></div>
         <ul class="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#news">News</a></li>
