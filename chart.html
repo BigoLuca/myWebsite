@@ -15,20 +15,22 @@
         <div class="tab">
             <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
             <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+            <button class="tablinks" onclick="openCity(event, 'Rome')">Rome</button>
         </div>
         <div id="London" class="tabcontent">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
+            <canvas class="London_chart"></canvas>
         </div>
         <div id="Paris" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p> 
+            <canvas class="Paris_chart"></canvas>
+        </div>
+        <div id="Rome" class="tabcontent">
+            <canvas class="Rome_chart"></canvas>
         </div>
     </main>
     <footer><p>Create by Luca Bighini</p></footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/menu.js" type="text/javascript"></script>
     <script src="./js/chart.js" type="text/javascript"></script>
-    
 </body>
 </html>

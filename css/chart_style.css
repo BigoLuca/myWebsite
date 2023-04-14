@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+.page_title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-bottom: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    backdrop-filter: blur(30px) invert(10%);
+    margin: 0% 5%;
+}
+
+.tab {
+    float: left;
+    margin-left: 5%;
+    width: 12%;
+    height: calc(100vh - 200px);
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-right-color: #cccccc;
+    border-bottom-left-radius: 20px;
+    backdrop-filter: blur(30px) invert(10%);
+}
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    padding: 7% 5%;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #aaaaaa;
+}
+  
+.tab button.active {
+    background-color: #eeeeee;
+}
+  
+.tabcontent {
+    float: left;
+    width: 78%;
+    height: calc(100vh - 200px);
+    border: 2px solid #ffffff;
+    border-left: none;
+    background-color: #eeeeee;
+    border-bottom-right-radius: 20px;
+}
