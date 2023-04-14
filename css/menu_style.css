@@ -131,8 +131,9 @@ section#hero {
 
 #hero h1 {
     font-size: 3rem;
-    padding-top: 5rem;
+    padding-top: 6rem;
     margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 footer {
@@ -143,7 +144,9 @@ footer {
 
 footer p {
     color: #aaaaaa;
-    text-align: center;
+    text-align: left;
+    margin-left: 1%;
+    font-size: 80%;
 }
 
 @media(max-width:767px) {
