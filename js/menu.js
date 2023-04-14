@@ -15,7 +15,7 @@ document.querySelector('header').innerHTML = `
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#login" class="login_btn"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+        <li><a href="login.html" class="login_btn"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
     </div>
 `;
 
