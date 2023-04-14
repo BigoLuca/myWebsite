@@ -14,10 +14,15 @@ li {
     list-style: none;
 }
 
+li:hover {
+    scale: 1.3;
+}
+
 a {
     text-decoration: none;
     color: #ffffff;
     font-size: 100%;
+    cursor: pointer;
 }
 
 a:hover {
@@ -47,7 +52,6 @@ header {
 
 .topnav .sitetitle a {
     color: orange;
-    cursor: pointer;
 }
 
 .topnav .sitetitle:hover {
@@ -67,20 +71,24 @@ header {
 }
 
 .login_btn {
-    background-color: orange;
-    color: #ffffff;
-    padding: 0.5% 2%;
-    border: none;
-    border-radius: 20px;
+    background: transparent;
+    border: 2px solid orange;
+    color: orange;
     outline: none;
-    font-weight: bold;
-    cursor: pointer;
+    border-radius: 20px;
+    padding: 0.5% 2%;
     transition: scale 0.2 ease;
 }
 
 .login_btn:hover {
     scale: 1.05;
+    background-color: orange;
     color: #ffffff;
+}
+
+.login_btn i {
+    display: inline-block;
+    margin-right: 0.4em;
 }
 
 .login_btn:active {
@@ -94,11 +102,15 @@ header {
     top: 70px;
     height: 0;
     width: 480px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu li:last-child {
+    scale: 1;
 }
 
 .dropdown_menu.open {
