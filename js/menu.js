@@ -3,7 +3,7 @@ document.querySelector('header').innerHTML = `
         <div class="sitetitle"><a href="index.html">My Website</a></div>
         <ul class="menu">
             <li><a href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
+            <li><a href="chart.html">Chart</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About</a></li>
         </ul>
@@ -12,7 +12,7 @@ document.querySelector('header').innerHTML = `
     </div>
     <div class="dropdown_menu">
         <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
+        <li><a href="chart.html">Chart</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="login.html" class="login_btn"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
