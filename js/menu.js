@@ -7,7 +7,7 @@ document.querySelector('header').innerHTML = `
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About</a></li>
         </ul>
-        <a href="#login" class="login_btn"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+        <a href="login.html" class="login_btn"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
         <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
     </div>
     <div class="dropdown_menu">
