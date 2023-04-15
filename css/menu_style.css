@@ -1,13 +1,13 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
     box-sizing: border-box;
     font-family: 'Candara';
     background-color: #000000;
     background-image: url('https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?auto=compress&cs=tinysrgb&w=2400');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
 
 li {
