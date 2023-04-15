@@ -2,7 +2,7 @@ document.querySelector('header').innerHTML = `
     <div class="topnav">
         <div class="sitetitle"><a href="index.html">My Website</a></div>
         <ul class="menu">
-            <li><a href="#home">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="chart.html">Chart</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About</a></li>
@@ -11,7 +11,7 @@ document.querySelector('header').innerHTML = `
         <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
     </div>
     <div class="dropdown_menu">
-        <li><a href="#home">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="chart.html">Chart</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li>

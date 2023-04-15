@@ -1,0 +1,81 @@
+.blog_title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.blog_title h2 {
+    background-color: #ffffff;
+    font-size: 3.5rem;
+    margin: 1% auto;
+    padding: 2% 5%;
+    border-radius: 10px;
+    mix-blend-mode: screen;
+}
+
+article {
+    margin: 2% 5%;
+    padding: 3%;
+    background-image: url("https://images.pexels.com/photos/91224/pexels-photo-91224.jpeg?auto=compress&cs=tinysrgb&w=2400");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 5px 5px #aaaaaa;
+    border-radius: 2%;
+}
+
+.head_article {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.head_article img, .head_article hgroup {
+    display: inline-block;
+}
+
+.head_article img {
+    width: 20%;
+    max-width: 200px;
+    height: 20%;
+    max-height: 200px;
+    border-radius: 40% 10%;
+}
+
+.head_article hgroup {
+    width: 40%;
+    max-width: 300px;
+    margin-left: 3%;
+    padding: 1% 2%;
+    border-radius: 20px;
+    backdrop-filter: blur(10px) invert(30%);
+}
+
+.head_article h3, .head_article h4 {
+    margin: 1% 0%;
+    font-size: 1.5rem;
+}
+
+article p {
+    padding: 5%;
+    border-radius: 20px;
+    backdrop-filter: blur(10px) invert(30%);
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 99;
+    font-size: 120%;
+    border: none;
+    outline: none;
+    background-color: #c90000;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #topBtn:hover {
+    background-color: #ff0000;
+  }
