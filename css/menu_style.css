@@ -3,11 +3,11 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Candara';
-    height: 100vh;
     background-color: #000000;
     background-image: url('https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?auto=compress&cs=tinysrgb&w=2400');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 li {
@@ -101,8 +101,8 @@ header {
     top: 70px;
     height: 0;
     width: 480px;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(15px);
+    background-color: rgb(102, 102, 102, 0.8);
+    backdrop-filter: blur(10px);
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
