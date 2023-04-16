@@ -1,4 +1,7 @@
 let h = document.querySelector('header');
+let url = new URL("https://bigoluca.github.io/myWebsite/index.html");
+url.searchParams.append('n', "Pippo");
+window.location.href = url;
 const param = new URLSearchParams(window.location.search).get('n');
 console.log(param);
 

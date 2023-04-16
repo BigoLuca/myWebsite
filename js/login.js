@@ -76,7 +76,7 @@ document.querySelector('.submit_btn').addEventListener('click', function(){
             console.log("ok");
             let url = new URL("https://bigoluca.github.io/myWebsite/index.html");
             url.searchParams.append('n', e["Username"]);
-            window.location.href = url
+            window.location.href = url;
             
         }
     });
