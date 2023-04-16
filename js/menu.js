@@ -18,7 +18,7 @@ document.querySelector('header').innerHTML = `
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About</a></li>
         </ul>
-        <a href=${p[1]} class="login_btn"><i class=${p[2]}></i> ${p[0]}</a>
+        <a href="${p[1]}" class="login_btn"><i class="${p[2]}"></i> ${p[0]}</a>
         <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
     </div>
     <div class="dropdown_menu">
