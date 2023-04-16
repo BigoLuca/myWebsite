@@ -53,7 +53,7 @@ function Singin() {
         </div>
         <div class="input_box">
             <span class="icon"><i class="fa-solid fa-lock"></i></span>
-            <input type="password" required>
+            <input type="password" minlength="4" maxlength="8" required>
             <label for="password">Password</label>
         </div>
         <div class="remember_forgot">
