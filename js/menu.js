@@ -1,4 +1,5 @@
 let h = document.querySelector('header');
+console.log(location.getParameter("n"));
 
 h.innerHTML = `
     <div class="topnav">
@@ -10,9 +11,9 @@ h.innerHTML = `
             <li><a href="#about">About</a></li>
         </ul>`;
 if (typeof location.getParameter("n") !== "undefined") {
-    h.innerHTML += `<a href="login.html" class="login_btn"><i class="fa-solid fa-right-to-bracket"></i> Login</a>`;
-}else {
     h.innerHTML += `<a href="#" class="login_btn"><i class="fa-solid fa-user"></i> ${location.getParameter("n")}</a>`;
+}else {
+    h.innerHTML += `<a href="login.html" class="login_btn"><i class="fa-solid fa-right-to-bracket"></i> Login</a>`;
 }
 h.innerHTML += `
         <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
