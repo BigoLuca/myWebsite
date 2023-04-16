@@ -1,11 +1,15 @@
-let h = document.querySelector('header');
-let url = new URL("https://bigoluca.github.io/myWebsite/index.html");
-url.searchParams.append('n', "Pippo");
+//let url = new URL("https://bigoluca.github.io/myWebsite/index.html");
+//url.searchParams.append('n', "Pippo");
 window.location.href = url;
 const param = new URLSearchParams(window.location.search).get('n');
+if (param !== null) {
+    let p = [param, "#", "fa-solid fa-user"];
+}else {
+    let p = ["Login", "login.html", "fa-solid fa-right-to-bracket"]
+}
 console.log(param);
 
-h.innerHTML = `
+document.querySelector('header').innerHTML = `
     <div class="topnav">
         <div class="sitetitle"><a href="index.html">My Website</a></div>
         <ul class="menu">
@@ -13,13 +17,8 @@ h.innerHTML = `
             <li><a href="chart.html">Chart</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About</a></li>
-        </ul>`;
-if (param !== null) {
-    h.innerHTML += `<a href="#" class="login_btn"><i class="fa-solid fa-user"></i> ${param}</a>`;
-}else {
-    h.innerHTML += `<a href="login.html" class="login_btn"><i class="fa-solid fa-right-to-bracket"></i> Login</a>`;
-}
-h.innerHTML += `
+        </ul>
+        <a href=${p[1]} class="login_btn"><i class=${p[2]}></i> ${p[0]}</a>
         <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
     </div>
     <div class="dropdown_menu">
