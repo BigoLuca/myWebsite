@@ -2,11 +2,10 @@
 //url.searchParams.append('n', "");
 //window.location.href = url;
 const param = new URLSearchParams(window.location.search).get('n');
-let p = ["Login", "login.html", "fa-solid fa-right-to-bracket"];
+let p = ["Login", "login.html?n=Login", "fa-solid fa-right-to-bracket"];
 if (param !== null && param !== "Login") {
     p = [String(param), "#", "fa-solid fa-user"];
 }
-console.log(p);
 
 document.querySelector('header').innerHTML = `
     <div class="topnav">
@@ -21,11 +20,11 @@ document.querySelector('header').innerHTML = `
         <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
     </div>
     <div class="dropdown_menu">
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="chart.html">Chart</a></li>
+        <li><a href="blog.html?n=${p[0]}">Blog</a></li>
+        <li><a href="chart.html?n=${p[0]}">Chart</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="login.html" class="login_btn"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+        <li><a href="${p[1]}" class="login_btn"><i class="${p[2]}"></i> ${p[0]}</a></li>
     </div>
 `;
 
