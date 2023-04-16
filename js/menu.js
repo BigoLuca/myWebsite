@@ -1,5 +1,22 @@
 let h = document.querySelector('header');
 
+$.extend({
+    getUrlVars: function(){
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for(var i = 0; i < hashes.length; i++)
+        {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+        return vars;
+        },
+        getUrlVar: function(name){
+        return $.getUrlVars()[name];
+        }
+});
+
 h.innerHTML = `
     <div class="topnav">
         <div class="sitetitle"><a href="index.html">My Website</a></div>
@@ -9,10 +26,10 @@ h.innerHTML = `
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About</a></li>
         </ul>`;
-if (typeof location.getParameter("n") !== "undefined") {
-    h.innerHTML += `<a href="login.html" class="login_btn"><i class="fa-solid fa-right-to-bracket"></i> Login</a>`;
+if ($.getUrlVar("n") != null !== "undefined") {
+    h.innerHTML += `<a href="#" class="login_btn"><i class="fa-solid fa-user"></i> ${$.getUrlVar("n")}</a>`;
 }else {
-    h.innerHTML += `<a href="#" class="login_btn"><i class="fa-solid fa-user"></i> ${location.getParameter("n")}</a>`;
+    h.innerHTML += `<a href="login.html" class="login_btn"><i class="fa-solid fa-right-to-bracket"></i> Login</a>`;
 }
 h.innerHTML += `
         <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
