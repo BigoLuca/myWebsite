@@ -2,12 +2,11 @@
 //url.searchParams.append('n', "");
 //window.location.href = url;
 const param = new URLSearchParams(window.location.search).get('n');
+let p = ["Login", "login.html", "fa-solid fa-right-to-bracket"];
 if (param !== null) {
-    let p = [param, "#", "fa-solid fa-user"];
-}else {
-    let p = ["Login", "login.html", "fa-solid fa-right-to-bracket"]
+    p = [String(param), "#", "fa-solid fa-user"];
 }
-console.log(param);
+console.log(p);
 
 document.querySelector('header').innerHTML = `
     <div class="topnav">
