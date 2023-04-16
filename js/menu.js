@@ -3,17 +3,17 @@
 //window.location.href = url;
 const param = new URLSearchParams(window.location.search).get('n');
 let p = ["Login", "login.html", "fa-solid fa-right-to-bracket"];
-if (param !== null) {
+if (param !== null && param !== "Login") {
     p = [String(param), "#", "fa-solid fa-user"];
 }
 console.log(p);
 
 document.querySelector('header').innerHTML = `
     <div class="topnav">
-        <div class="sitetitle"><a href="index.html">My Website</a></div>
+        <div class="sitetitle"><a href="index.html?n=${p[0]}">My Website</a></div>
         <ul class="menu">
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="chart.html">Chart</a></li>
+            <li><a href="blog.html?n=${p[0]}">Blog</a></li>
+            <li><a href="chart.html?n=${p[0]}">Chart</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About</a></li>
         </ul>
